@@ -30,12 +30,20 @@ As we can see, maven compiled the source file
 into bytecode.
 
 
+Experiment 3
+============
+1. Navigate to folder "3"
+2. Run "mvn package"
+3. Navigate to the "target" folder
+4. Inspect the contents of the JAR
 
 
 Maven follows a certain directory layout, thereby adhering to 
 the "convention over configuration" principle.
 More info here:
 https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
-
+Experminent 3 demonstrates that Maven downloaded the commons-lang
+dependency which we specified in pom.xml, but it is not in the jar. So it was only 
+put in the compile classpath.
 
 
